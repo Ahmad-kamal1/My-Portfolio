@@ -1,13 +1,13 @@
-# 🌐 Personal Portfolio Website
+Personal Portfolio Website
 
-This is my personal portfolio website built using **HTML**, **CSS**, **JavaScript**, and enhanced UI/UX designed in **Figma**.  
+This is my personal portfolio website built using HTML,CSS,JavaScript, and enhanced UI/UX designed in Figma.  
 The portfolio showcases my projects, skills, experience, and includes a dynamic project modal system, image gallery slider, and category-based filtering.
 
 ---
 
-## 🚀 Features
+Features
 
-### 🔥 Portfolio Highlights
+Portfolio Highlights
 - Interactive UI with smooth animations  
 - Fully responsive design (mobile + desktop)  
 - Dynamic project gallery with modal preview  
@@ -21,25 +21,25 @@ The portfolio showcases my projects, skills, experience, and includes a dynamic 
 
 ---
 
-## 🖥️ Tech Stack Used
+Tech Stack Used
 
-### **Frontend**
+Frontend
 - HTML5  
 - CSS3  
 - JavaScript (ES6)
 
-### **Backend (for future expansion)**
+Backend (for future expansion)
 - PHP  
 - MySQL  
 
-### **Design**
+Design
 - Figma
 
 ---
 
-## 📸 Project Example (Included in Portfolio)
+Project Example (Included in Portfolio)
 
-### **Elegantvenues – Wedding Hall Booking Platform**
+Elegantvenues – Wedding Hall Booking Platform
 A full-stack booking system with:
 - User authentication  
 - Venue browsing  
@@ -51,7 +51,7 @@ GitHub Repo: `https://github.com/Ahmad-kamal1/Wedding-Hall-Booking`
 
 ---
 
-## 📂 File Structure (Important)
+File Structure (Important)
 
 ```
 /My-Portfolio
@@ -69,25 +69,25 @@ GitHub Repo: `https://github.com/Ahmad-kamal1/Wedding-Hall-Booking`
 
 ---
 
-## ⚙️ How to Use / Run
+How to Use / Run
 
-### **1. Download or Clone the Project**
+1. Download or Clone the Project
 
 ```bash
 git clone https://github.com/Ahmad-kamal1/My-Portfolio.git
 ```
 
-### **2. Open the project folder**
+2. Open the project folder
 ```
 cd My-Portfolio
 ```
 
-### **3. Run the website**
-Simply open **index.html** in your browser.
+3. Run the website
+Simply open index.html in your browser.
 
 ---
 
-## 🛠️ Script.js Contains:
+Script.js Contains:
 - Dynamic project rendering  
 - Modal preview with image slider  
 - Thumbnails  
@@ -96,14 +96,13 @@ Simply open **index.html** in your browser.
 - Scroll animations  
 
 ---
-
-## 📧 Contact
+ Contact
 
 If you want to connect or collaborate:
 
-**LinkedIn:** https://www.linkedin.com/in/ahmad-kamal-544402398?utm_source=share_via&utm_content=profile&utm_medium=member_android 
-**GitHub:** https://github.com/Ahmad-kamal1
+LinkedIn: https://www.linkedin.com/in/ahmad-kamal-544402398?utm_source=share_via&utm_content=profile&utm_medium=member_android 
+GitHub: https://github.com/Ahmad-kamal1
 
 ---
 
-⭐ *If you like this project, give it a star on GitHub!* ⭐
+*If you like this project, give it a star on GitHub!* 
