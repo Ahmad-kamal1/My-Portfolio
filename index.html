@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmad Kamal | Full Stack Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <a href="#">Ahmad<span>Kamal</span></a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#qualification">Qualification</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <button class="resume-btn" id="resumeBtn">
+                    <i class="fas fa-download"></i> Resume
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero/Profile Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Hi, I'm <span class="highlight">Ahmad Kamal</span></h1>
+                    <h2 class="hero-subtitle">Full Stack Web Developer</h2>
+                    <p class="hero-description">
+                        I create beautiful, functional websites and web applications. 
+                        Passionate about clean code, user experience, and solving complex problems 
+                        with simple, elegant solutions.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn primary-btn">
+                            <i class="fas fa-envelope"></i> Hire Me
+                        </a>
+                        <a href="assets/CV.pdf" class="btn secondary-btn" id="download-resume" download>
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/Ahmad-kamal1" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ahmad-kamal-544402398?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://x.com/Kamalkamal8882?t=YqhCN7i59WnFcwdbD6YWJQ&s=09" target="_blank" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/kami3d_solutions?igsh=MWw3YmNhdGoyaWFxbA==" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/share/1M2wUicmDC/" target="_blank" class="social-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="profile-image-container">
+                        <img src="assets/images/profile.jpeg" alt="Ahmad Kamal" class="profile-image" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80'">
+                        <div class="image-border"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About <span class="highlight">Me</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Turning Ideas Into Digital Reality</h3>
+                    <p>
+                        I'm a passionate Full Stack Web Developer with expertise in both frontend 
+                        and backend technologies. With a strong foundation in modern web development, 
+                        I specialize in creating responsive, user-friendly websites and web applications.
+                    </p>
+                    <p>
+                        My journey in web development started with curiosity and has grown into a 
+                        professional career where I continuously learn and adapt to new technologies 
+                        and best practices.
+                    </p>
+                    <p>
+                        When I'm not coding, I enjoy contributing to open-source projects, learning 
+                        new frameworks, and staying updated with the latest web development trends.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h4>3</h4>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>Fresh</h4>
+                        <!-- <p>Years Experience</p> -->
+                    </div>
+                    <div class="stat-item">
+                        <h4>3</h4>
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My <span class="highlight">Projects</span></h2>
+            <p class="section-subtitle">Recent work I've completed</p>
+            
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+            </div>
+            
+            <div class="projects-grid" id="projectsContainer">
+                <!-- Projects will be dynamically loaded here -->
+            </div>
+            
+            <!-- Project Modal -->
+            <div class="project-modal" id="projectModal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title" id="modalProjectTitle"></h3>
+                        <span class="close-modal">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Image Gallery -->
+                        <div class="image-gallery">
+                            <div class="main-image-container">
+                                <img id="modalMainImage" src="" alt="" class="main-image">
+                                <button class="gallery-nav prev-btn">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <button class="gallery-nav next-btn">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+                            <div class="thumbnail-container" id="thumbnailContainer">
+                                <!-- Thumbnails will be dynamically loaded here -->
+                            </div>
+                        </div>
+                        
+                        <!-- Project Details -->
+                        <div class="project-details">
+                            <div class="details-section">
+                                <h4><i class="fas fa-info-circle"></i> Description</h4>
+                                <p id="modalProjectDescription"></p>
+                            </div>
+                            
+                            <div class="details-section">
+                                <h4><i class="fas fa-cogs"></i> Technologies Used</h4>
+                                <div class="modal-tech" id="modalProjectTech"></div>
+                            </div>
+                            
+                            <div class="details-section">
+                                <h4><i class="fas fa-star"></i> Key Features</h4>
+                                <ul class="modal-features" id="modalProjectFeatures"></ul>
+                            </div>
+                            
+                            <div class="details-section">
+                                <h4><i class="fas fa-external-link-alt"></i> Live Links</h4>
+                                <div class="modal-links">
+                                    <a href="#" class="modal-link-btn live-btn" id="modalLiveLink" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i> View Live Demo
+                                    </a>
+                                    <a href="#" class="modal-link-btn github-btn" id="modalGitHubLink" target="_blank">
+                                        <i class="fab fa-github"></i> View Source Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+            <div class="skills-grid">
+                <!-- Frontend Skills -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Frontend Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-html5 html-icon"></i>
+                            <span>HTML5</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt css-icon"></i>
+                            <span>CSS3</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js-square js-icon"></i>
+                            <span>JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frameworks Skills -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-layer-group"></i> Frameworks</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-react react-icon"></i>
+                            <span>React.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Skills -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-php php-icon"></i>
+                            <span>PHP</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-node-js node-icon"></i>
+                            <span>Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database Skills -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Database</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-database mysql-icon"></i>
+                            <span>MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Others -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Others</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt git-icon"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-github github-icon"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-terminal terminal-icon"></i>
+                            <span>Command Line</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Qualification Section -->
+    <section id="qualification" class="qualification">
+        <div class="container">
+            <h2 class="section-title">My <span class="highlight">Qualification</span></h2>
+            <div class="timeline">
+                <!-- Matriculation -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Matriculation (Science)</h3>
+                            <span class="timeline-date">2019</span>
+                        </div>
+                        <p class="institute-name">Ghazi Model School and College Pabbi Nowshera</p>
+                        <p>Completed with excellent grades in Science subjects including Mathematics, Physics, Chemistry and Computer Science.</p>
+                    </div>
+                </div>
+
+                <!-- FSc/Intermediate -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>FSc (Pre-Engineering)</h3>
+                            <span class="timeline-date">2019 - 2021</span>
+                        </div>
+                        <p class="institute-name">Islamia College Peshawar</p>
+                        <p>Specialized in Mathematics, Physics, and Chemistry. Developed strong analytical and problem-solving skills.</p>
+                    </div>
+                </div>
+
+                <!-- Graduation -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Bachelor of Science in Computer Science</h3>
+                            <span class="timeline-date">2021 - 2025</span>
+                        </div>
+                        <p class="institute-name">City University of Science & Information Technology</p>
+                        <p>Specialized in Web Development, Database Management, and Software Engineering. Completed several web development projects and gained hands-on experience with modern technologies.</p>
+                    </div>
+                </div>
+
+                <!-- Certifications (Optional) -->
+                <!-- <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Full Stack Web Development Course</h3>
+                            <span class="timeline-date">2025</span>
+                        </div>
+                        <p class="institute-name"></p>
+                        <p>Completed comprehensive full-stack development course covering HTML, CSS, JavaScript, PHP, MySQL, Node.js, and modern frameworks.</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with Contact Section -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h3 class="footer-title">Contact <span class="highlight">Me</span></h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>ahmikams123@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+92 370 9152735</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Peshawar, Pakistan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h3 class="footer-title">Quick <span class="highlight">Links</span></h3>
+                    <ul>
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About</a></li>
+                        <li><a href="#projects"><i class="fas fa-chevron-right"></i> Projects</a></li>
+                        <li><a href="#skills"><i class="fas fa-chevron-right"></i> Skills</a></li>
+                        <li><a href="#qualification"><i class="fas fa-chevron-right"></i> Qualification</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div class="footer-social">
+                    <h3 class="footer-title">Follow <span class="highlight">Me</span></h3>
+                    <div class="social-icons">
+                        <a href="https://github.com/Ahmad-kamal1" target="_blank" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ahmad-kamal-544402398?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="social-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://x.com/Kamalkamal8882?t=YqhCN7i59WnFcwdbD6YWJQ&s=09" target="_blank" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/kami3d_solutions?igsh=MWw3YmNhdGoyaWFxbA==" target="_blank" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/share/1M2wUicmDC/" target="_blank" class="social-icon">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                    <p class="newsletter-text">Subscribe to my newsletter for updates</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="copyright">
+                <p>&copy; 2024 Ahmad Kamal. All rights reserved. | Designed & Developed with ❤️ by Ahmad Kamal</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- WhatsApp Chat Button -->
+    <a href="https://wa.me/923709152735?text=Hi%20Ahmad%2C%20I%20would%20like%20to%20discuss%20a%20project%20with%20you." target="_blank" class="whatsapp-btn" title="Chat with me on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
