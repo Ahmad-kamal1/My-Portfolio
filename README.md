@@ -50,6 +50,28 @@ A full-stack booking system with:
 GitHub Repo: `https://github.com/Ahmad-kamal1/Wedding-Hall-Booking`
 
 ---
+MY-Portfoloi website
+Portfolio website created using HTML, CSS & JS with:
+- HOME
+- About me
+- Contact me
+- Qualification
+- My skills
+
+Github Repo: `https://github.com/Ahmad-kamal1/My-Portfolio`
+
+---
+Basic-Calculator
+Frontend using HTML, CSS & JS with:
+- Clean UI
+- Responsive Design
+- Clear buttons
+- Using Instructions
+- Functional
+
+Github Repo: `https://github.com/Ahmad-kamal1/Basic-Calculator`
+
+---
 
 File Structure (Important)
 
@@ -65,6 +87,8 @@ File Structure (Important)
     |   ├── icons/
     |       ├── CV.pdf
     ├── project1
+    ├── project2
+    ├── project3
 ```
 
 ---
