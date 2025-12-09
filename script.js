@@ -35,7 +35,53 @@ document.addEventListener('DOMContentLoaded', function() {
             liveLink: "#",
             githubLink: "https://github.com/Ahmad-kamal1/Wedding-Hall-Booking"
         },
-       
+       {
+            id: 2,
+            title: "My-Portfolio",
+            description: "A modern and responsive personal portfolio website showcasing my skills, projects, and experience in web development. Built using HTML, CSS, and JavaScript, this portfolio highlights my work, creativity, and passion for building clean and user-friendly digital experiences.",
+            images: [
+                "assets/images/project2/home.jpg",
+                "assets/images/project2/contact me.jpg",
+                "assets/images/project2/about.jpg",
+                "assets/images/project2/my project.jpg",
+                "assets/images/project2/my skill.jpg",
+                "assets/images/project2/my qualification.jpg",
+                "assets/images/project2/overall.jpg",
+            ],
+            technologies: ["HTML5", "CSS3", "JavaScript",],
+            category: "frontend",
+            features: [
+                "Home Page",
+                "About Me",
+                "My Projects Showcase",
+                "My Qualification",
+                "Responsive Mobile Design",
+                "Contact Me"
+            ],
+            liveLink: "https://ahmad-kamal1.github.io/My-Portfolio/",
+            githubLink: "https://github.com/Ahmad-kamal1/My-Portfolio"
+        },
+          {
+            id: 3,
+            title: "Basic-Calculator",
+            description: "A clean, responsive, and user-friendly web-based calculator built using HTML, CSS, and JavaScript.",
+            images: [
+                "assets/images/project3/dark mode calculator.jpg",
+                "assets/images/project3/light mode calculator.jpg",
+            ],
+            technologies: ["HTML5", "CSS3", "JavaScript",],
+            category: "frontend",
+            features: [
+                "Home Page",
+                "About Me",
+                "My Projects Showcase",
+                "My Qualification",
+                "Responsive Mobile Design",
+                "Contact Me"
+            ],
+            liveLink: "#",
+            githubLink: "https://github.com/Ahmad-kamal1/Basic-Calculator"
+        },
     ];
     
     // Fallback image in case project images don't load
