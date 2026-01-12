@@ -76,21 +76,24 @@ Github Repo: `https://github.com/Ahmad-kamal1/Basic-Calculator`
 File Structure (Important)
 
 ```
-/My-Portfolio
-│── index.html
-│── style.css
-│── script.js
-│── README.md
-│
-└── assets/
-    ├── images/
-    |   ├── icons/
-    |       ├── CV.pdf
-    ├── project1
-    ├── project2
-    ├── project3
-```
-
+My-portfolio/
+├── index.html
+├── style.css
+├── script.js
+├── assets/
+│   ├── certificates/
+│   │   ├── javascript-essentials1.pdf
+│   │   ├── javascript-essentials2.pdf
+│   │   └── english-for-it.pdf
+│   ├── images/
+│   │   ├── profile.jpeg
+│   │   ├── favicon.png
+│   │   ├── project1/
+│   │   ├── project2/
+│   │   └── project3/
+│   └── icons/
+│       └── pdf/
+│           └── Ahmad kamal CV.pdf
 ---
 
 How to Use / Run
