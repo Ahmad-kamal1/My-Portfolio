@@ -406,7 +406,7 @@ function attachCertificateEventListeners() {
             resumeBtn.addEventListener('click', function() {
                 alert('Resume download starting...');
                 // In a real implementation, this would trigger a file download
-                window.open('assets/images/icons/pdf/Ahmad kamal CV.pdf', '_blank');
+                window.open('assets/images/icons/pdf/Ahmad Kamal CV.pdf', '_blank');
             });
         }
         
