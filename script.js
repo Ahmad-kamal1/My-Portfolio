@@ -3,6 +3,44 @@
 document.addEventListener('DOMContentLoaded', function() {
     console.log('Portfolio website loaded! 🚀');
     
+    // ========== Certifications Data ==========
+const certifications = [
+    {
+        id: 1,
+        title: "JavaScript Essentials 1",
+        issuer: "Cisco Networking Academy",
+        date: "2025",
+        description: "Fundamental JavaScript programming concepts including variables, data types, operators, control structures, functions, and basic DOM manipulation.",
+        pdfPath: "assets/certificates/JS essentials1.pdf",
+        skills: ["JavaScript", "Programming Fundamentals", "Algorithm Design"]
+    },
+    {
+        id: 2,
+        title: "JavaScript Essentials 2",
+        issuer: "Cisco Networking Academy",
+        date: "2025",
+        description: "Advanced JavaScript topics covering object-oriented programming, asynchronous JavaScript, ES6+ features, error handling, and modern development practices.",
+        pdfPath: "assets/certificates/JS essentials2.pdf",
+        skills: ["Advanced JavaScript", "Async Programming", "ES6+", "Error Handling"]
+    },
+    {
+        id: 3,
+        title: "English for IT",
+        issuer: "Cisco Networking Academy",
+        date: "2025",
+        description: "Specialized English language course focusing on IT vocabulary, technical documentation, professional communication in technology contexts, and IT-specific language skills.",
+        pdfPath: "assets/certificates/Englishfor IT.pdf",
+        skills: ["Technical English", "IT Vocabulary", "Professional Communication", "Documentation"]
+    }
+];
+
+// ========== Certificate Modal Elements ==========
+const certificateModal = document.getElementById('certificateModal');
+const closeCertificateModal = document.querySelector('.close-certificate-modal');
+const certificatePdfViewer = document.getElementById('certificatePdfViewer');
+const downloadCertificateBtn = document.getElementById('downloadCertificateBtn');
+const certificateModalTitle = document.getElementById('certificateModalTitle');
+const certificationsContainer = document.getElementById('certificationsContainer');
     // ========== Projects Data ==========
     const projects = [
         {
@@ -84,6 +122,112 @@ document.addEventListener('DOMContentLoaded', function() {
         },
     ];
     
+    // ========== Initialize Certifications ==========
+function initCertifications() {
+    if (!certificationsContainer) return;
+    
+    renderCertifications();
+    attachCertificateEventListeners();
+}
+
+// ========== Render Certifications ==========
+function renderCertifications() {
+    certificationsContainer.innerHTML = '';
+    
+    certifications.forEach(cert => {
+        const certCard = createCertificationCard(cert);
+        certificationsContainer.innerHTML += certCard;
+    });
+}
+
+function createCertificationCard(cert) {
+    return `
+        <div class="certification-card" data-id="${cert.id}">
+            <div class="certification-header">
+                <h3 class="certification-title">${cert.title}</h3>
+                <span class="certification-date">${cert.date}</span>
+            </div>
+            <p class="certification-issuer">${cert.issuer}</p>
+            <p class="certification-description">${cert.description}</p>
+            <div class="certification-skills">
+                ${cert.skills.map(skill => 
+                    `<span class="certification-skill">${skill}</span>`
+                ).join('')}
+            </div>
+            <div class="certification-actions">
+                <button class="certification-btn preview-btn" data-id="${cert.id}">
+                    <i class="fas fa-eye"></i> Preview Certificate
+                </button>
+                <a href="${cert.pdfPath}" class="certification-btn view-btn" download="${cert.title.replace(/\s+/g, '-').toLowerCase()}-certificate.pdf">
+                    <i class="fas fa-download"></i> Download PDF
+                </a>
+            </div>
+        </div>
+    `;
+}
+
+// ========== Certificate Modal Functions ==========
+function openCertificateModal(certificateId) {
+    const cert = certifications.find(c => c.id === certificateId);
+    if (!cert) return;
+    
+    // Set modal content
+    certificateModalTitle.textContent = `${cert.title} - ${cert.issuer}`;
+    
+    // Set PDF viewer source
+    certificatePdfViewer.src = cert.pdfPath;
+    
+    // Set download link
+    downloadCertificateBtn.href = cert.pdfPath;
+    downloadCertificateBtn.download = `${cert.title.replace(/\s+/g, '-').toLowerCase()}-certificate.pdf`;
+    
+    // Show modal
+    certificateModal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    
+    // Smooth appearance
+    setTimeout(() => {
+        certificateModal.style.opacity = '1';
+    }, 10);
+}
+
+function closeCertificateModalFunc() {
+    certificateModal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+    
+    // Clear PDF viewer
+    certificatePdfViewer.src = '';
+}
+
+// ========== Attach Certificate Event Listeners ==========
+function attachCertificateEventListeners() {
+    // Preview certificate buttons
+    document.querySelectorAll('.preview-btn').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            const certId = parseInt(this.getAttribute('data-id'));
+            openCertificateModal(certId);
+        });
+    });
+    
+    // Close certificate modal
+    closeCertificateModal?.addEventListener('click', closeCertificateModalFunc);
+    
+    // Close certificate modal on outside click
+    certificateModal?.addEventListener('click', function(e) {
+        if (e.target === certificateModal) {
+            closeCertificateModalFunc();
+        }
+    });
+    
+    // Close certificate modal with Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && certificateModal.style.display === 'flex') {
+            closeCertificateModalFunc();
+        }
+    });
+}
     // Fallback image in case project images don't load
     const fallbackImage = "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80";
     
@@ -115,6 +259,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // ========== Initialize ==========
     function init() {
         renderProjects();
+         initCertifications();
         attachEventListeners();
         setupAnimations();
         console.log('Portfolio initialized! ✨');
@@ -261,7 +406,7 @@ document.addEventListener('DOMContentLoaded', function() {
             resumeBtn.addEventListener('click', function() {
                 alert('Resume download starting...');
                 // In a real implementation, this would trigger a file download
-                window.open('assets/CV.pdf', '_blank');
+                window.open('assets/images/icons/pdf/Ahmad kamal CV.pdf', '_blank');
             });
         }
         
