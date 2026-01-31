@@ -120,6 +120,25 @@ const certificationsContainer = document.getElementById('certificationsContainer
             liveLink: "#",
             githubLink: "https://github.com/Ahmad-kamal1/Basic-Calculator"
         },
+        {
+            id: 4,
+            title: "Digital-Card",
+            description: "A clean, responsive, and user-friendly digital business card with QR code, Bio data form built using HTML, CSS, and JavaScript.",
+            images: [
+                "assets/images/project 4/Card.jpg",
+                "assets/images/project 4/Bio form.jpg",
+            ],
+            technologies: ["HTML5", "CSS3", "JavaScript",],
+            category: "frontend",
+            features: [
+                "Digital card",
+                "Bio data form",
+                "Responsive design",
+                "QR code generation"
+            ],
+            liveLink: "#",
+            githubLink: "https://github.com/Ahmad-kamal1/Digital-Card"
+        },
     ];
     
     // ========== Initialize Certifications ==========
