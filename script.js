@@ -171,7 +171,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 "Customer management",
             ],
             liveLink: "#",
-            githubLink: "https://github.com/Ahmad-kamal1/Digital-Card"
+            githubLink: "https://github.com/Ahmad-kamal1/Pizza-Pixel"
         },
 
     ];
