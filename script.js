@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 
             ],
             technologies: ["React.js", "Node.js", "Express.js", "MYSQL"],
-            category: "Fullstack",
+            category: "fullstack",
 
             features: [
                 "Brouse menu",
