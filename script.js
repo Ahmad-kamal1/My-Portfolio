@@ -154,7 +154,41 @@ document.addEventListener('DOMContentLoaded', function () {
                 "assets/images/project 5/Billing Screen.png",
                 "assets/images/project 5/Masseges screen.png",
                 "assets/images/project 5/Profile.png",
-                
+
+            ],
+            technologies: ["React.js", "Node.js", "Express.js", "MYSQL"],
+            category: "fullstack",
+
+            features: [
+                "Brouse menu",
+                "Categories",
+                "Responsive design",
+                "Placed order",
+                "PTrack order",
+                "Admin panel",
+                "Items/Categories management",
+                "Billing system",
+                "Customer management",
+            ],
+            liveLink: "#",
+            githubLink: "https://github.com/Ahmad-kamal1/Pizza-Pixel"
+        },
+        {
+            id: 5,
+            title: "Academy Management System",
+            description: "Academy Management System is a PHP & MySQL based web application that allows administrators to manage students, teachers, courses, and enrollments through a centralized dashboard. The system demonstrates CRUD operations, relational database design, and structured backend development for educational institutions.",
+            images: [
+                "assets/images/project 5/Home screen.png",
+                "assets/images/project 5/About.png",
+                "assets/images/project 5/Menu.png",
+                "assets/images/project 5/Contact us.png",
+                "assets/images/project 5/Dashboard.png",
+                "assets/images/project 5/Items management.png",
+                "assets/images/project 5/Categories screen.png",
+                "assets/images/project 5/Billing Screen.png",
+                "assets/images/project 5/Masseges screen.png",
+                "assets/images/project 5/Profile.png",
+
             ],
             technologies: ["React.js", "Node.js", "Express.js", "MYSQL"],
             category: "fullstack",
