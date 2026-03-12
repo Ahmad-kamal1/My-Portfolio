@@ -43,104 +43,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const certificationsContainer = document.getElementById('certificationsContainer');
     // ========== Projects Data ==========
     const projects = [
+        
         {
             id: 1,
-            title: "Elegantvenues - Wedding Hall Booking Platform",
-            description: "A comprehensive wedding hall booking system with user authentication, venue management, booking system, and admin dashboard. This full-stack application allows users to browse venues, book appointments, and manage their bookings seamlessly.",
-            images: [
-                "assets/images/project1/home.jpg",
-                "assets/images/project1/login.jpg",
-                "assets/images/project1/admin dashboard.jpg",
-                "assets/images/project1/admin login.jpg",
-                "assets/images/project1/register.jpg",
-                "assets/images/project1/contumer management.jpg",
-                "assets/images/project1/report and analysis.jpg",
-                "assets/images/project1/contact us.jpg",
-                "assets/images/project1/about.jpg",
-                "assets/images/project1/setting.jpg",
-                "assets/images/project1/overall Frame.jpg",
-            ],
-            technologies: ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL",],
-            category: "fullstack",
-            features: [
-                "User Registration & Login System",
-                "Venue Catalog with Advanced Filtering",
-                "Real-time Booking Management",
-                "Admin Dashboard with Analytics",
-                "Responsive Mobile Design",
-                "User Reviews & Ratings System"
-            ],
-            liveLink: "#",
-            githubLink: "https://github.com/Ahmad-kamal1/Wedding-Hall-Booking"
-        },
-        {
-            id: 2,
-            title: "My-Portfolio",
-            description: "A modern and responsive personal portfolio website showcasing my skills, projects, and experience in web development. Built using HTML, CSS, and JavaScript, this portfolio highlights my work, creativity, and passion for building clean and user-friendly digital experiences.",
-            images: [
-                "assets/images/project2/home.jpg",
-                "assets/images/project2/contact me.jpg",
-                "assets/images/project2/about.jpg",
-                "assets/images/project2/my project.jpg",
-                "assets/images/project2/my skill.jpg",
-                "assets/images/project2/my qualification.jpg",
-                "assets/images/project2/overall.jpg",
-            ],
-            technologies: ["HTML5", "CSS3", "JavaScript",],
-            category: "frontend",
-            features: [
-                "Home Page",
-                "About Me",
-                "My Projects Showcase",
-                "My Qualification",
-                "Responsive Mobile Design",
-                "Contact Me"
-            ],
-            liveLink: "https://ahmad-kamal1.github.io/My-Portfolio/",
-            githubLink: "https://github.com/Ahmad-kamal1/My-Portfolio"
-        },
-        {
-            id: 3,
-            title: "Basic-Calculator",
-            description: "A clean, responsive, and user-friendly web-based calculator built using HTML, CSS, and JavaScript.",
-            images: [
-                "assets/images/project3/dark mode calculator.jpg",
-                "assets/images/project3/light mode calculator.jpg",
-            ],
-            technologies: ["HTML5", "CSS3", "JavaScript",],
-            category: "frontend",
-            features: [
-                "Home Page",
-                "About Me",
-                "My Projects Showcase",
-                "My Qualification",
-                "Responsive Mobile Design",
-                "Contact Me"
-            ],
-            liveLink: "#",
-            githubLink: "https://github.com/Ahmad-kamal1/Basic-Calculator"
-        },
-        {
-            id: 4,
-            title: "Digital-Card",
-            description: "A clean, responsive, and user-friendly digital business card with QR code, Bio data form built using HTML, CSS, and JavaScript.",
-            images: [
-                "assets/images/project 4/Card.jpg",
-                "assets/images/project 4/Bio form.jpg",
-            ],
-            technologies: ["HTML5", "CSS3", "JavaScript",],
-            category: "frontend",
-            features: [
-                "Digital card",
-                "Bio data form",
-                "Responsive design",
-                "QR code generation"
-            ],
-            liveLink: "#",
-            githubLink: "https://github.com/Ahmad-kamal1/Digital-Card"
-        },
-        {
-            id: 5,
             title: "Pizza-Pixel",
             description: "PizzaPixel is a full-stack pizza shop management web application that allows users to browse the menu, customize pizzas, place orders, and track their purchases seamlessly. The admin panel enables efficient management of products, categories, orders, customers, and billing. Tech Stack: Built using React.js for the frontend, Node.js and Express.js for the backend, and MySQL for database management.",
             images: [
@@ -173,8 +78,8 @@ document.addEventListener('DOMContentLoaded', function () {
             liveLink: "#",
             githubLink: "https://github.com/Ahmad-kamal1/Pizza-Pixel"
         },
-        {
-            id: 6,
+         {
+            id: 2,
             title: "Academy Management System",
             description: "Academy Management System is a PHP & MySQL based web application that allows administrators to manage students, teachers, courses, and enrollments through a centralized dashboard. The system demonstrates CRUD operations, relational database design, and structured backend development for educational institutions.",
             images: [
@@ -215,6 +120,104 @@ document.addEventListener('DOMContentLoaded', function () {
             liveLink: "#",
             githubLink: "https://github.com/Ahmad-kamal1/Academy--management"
         },
+        {
+            id: 3,
+            title: "Elegantvenues - Wedding Hall Booking Platform",
+            description: "A comprehensive wedding hall booking system with user authentication, venue management, booking system, and admin dashboard. This full-stack application allows users to browse venues, book appointments, and manage their bookings seamlessly.",
+            images: [
+                "assets/images/project1/home.jpg",
+                "assets/images/project1/login.jpg",
+                "assets/images/project1/admin dashboard.jpg",
+                "assets/images/project1/admin login.jpg",
+                "assets/images/project1/register.jpg",
+                "assets/images/project1/contumer management.jpg",
+                "assets/images/project1/report and analysis.jpg",
+                "assets/images/project1/contact us.jpg",
+                "assets/images/project1/about.jpg",
+                "assets/images/project1/setting.jpg",
+                "assets/images/project1/overall Frame.jpg",
+            ],
+            technologies: ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL",],
+            category: "fullstack",
+            features: [
+                "User Registration & Login System",
+                "Venue Catalog with Advanced Filtering",
+                "Real-time Booking Management",
+                "Admin Dashboard with Analytics",
+                "Responsive Mobile Design",
+                "User Reviews & Ratings System"
+            ],
+            liveLink: "#",
+            githubLink: "https://github.com/Ahmad-kamal1/Wedding-Hall-Booking"
+        },
+        {
+            id: 4,
+            title: "My-Portfolio",
+            description: "A modern and responsive personal portfolio website showcasing my skills, projects, and experience in web development. Built using HTML, CSS, and JavaScript, this portfolio highlights my work, creativity, and passion for building clean and user-friendly digital experiences.",
+            images: [
+                "assets/images/project2/home.jpg",
+                "assets/images/project2/contact me.jpg",
+                "assets/images/project2/about.jpg",
+                "assets/images/project2/my project.jpg",
+                "assets/images/project2/my skill.jpg",
+                "assets/images/project2/my qualification.jpg",
+                "assets/images/project2/overall.jpg",
+            ],
+            technologies: ["HTML5", "CSS3", "JavaScript",],
+            category: "frontend",
+            features: [
+                "Home Page",
+                "About Me",
+                "My Projects Showcase",
+                "My Qualification",
+                "Responsive Mobile Design",
+                "Contact Me"
+            ],
+            liveLink: "https://ahmad-kamal1.github.io/My-Portfolio/",
+            githubLink: "https://github.com/Ahmad-kamal1/My-Portfolio"
+        },
+        {
+            id: 5,
+            title: "Basic-Calculator",
+            description: "A clean, responsive, and user-friendly web-based calculator built using HTML, CSS, and JavaScript.",
+            images: [
+                "assets/images/project3/dark mode calculator.jpg",
+                "assets/images/project3/light mode calculator.jpg",
+            ],
+            technologies: ["HTML5", "CSS3", "JavaScript",],
+            category: "frontend",
+            features: [
+                "Home Page",
+                "About Me",
+                "My Projects Showcase",
+                "My Qualification",
+                "Responsive Mobile Design",
+                "Contact Me"
+            ],
+            liveLink: "#",
+            githubLink: "https://github.com/Ahmad-kamal1/Basic-Calculator"
+        },
+        {
+            id: 6,
+            title: "Digital-Card",
+            description: "A clean, responsive, and user-friendly digital business card with QR code, Bio data form built using HTML, CSS, and JavaScript.",
+            images: [
+                "assets/images/project 4/Card.jpg",
+                "assets/images/project 4/Bio form.jpg",
+            ],
+            technologies: ["HTML5", "CSS3", "JavaScript",],
+            category: "frontend",
+            features: [
+                "Digital card",
+                "Bio data form",
+                "Responsive design",
+                "QR code generation"
+            ],
+            liveLink: "#",
+            githubLink: "https://github.com/Ahmad-kamal1/Digital-Card"
+        },
+        
+       
 
     ];
 
