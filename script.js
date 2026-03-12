@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 "Categories",
                 "Responsive design",
                 "Placed order",
-                "PTrack order",
+                "Track order",
                 "Admin panel",
                 "Items/Categories management",
                 "Billing system",
